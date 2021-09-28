@@ -10,6 +10,7 @@ namespace kosar2004
   class Program
   {
     static List<kosarak> kosar = new List<kosarak>();
+    static Dictionary<string, int> husznaltobb = new Dictionary<string, int>();
     static void Main(string[] args)
     {
       MasodikFeladat();
@@ -24,7 +25,25 @@ namespace kosar2004
 
     private static void HetedikFeladat()
     {
-
+      Console.WriteLine("7. feladat:");
+      foreach (var k in kosar)
+      {
+        if (!husznaltobb.ContainsKey(k.Helyszin))
+        {
+          husznaltobb.Add(k.Helyszin, 1);
+        }
+        else
+        {
+          husznaltobb[k.Helyszin]++;
+        }
+      }
+      foreach (var h in husznaltobb)
+      {
+        if (h.Value > 20)
+        {
+          Console.WriteLine("\t{0} : {1}", h.Key, h.Value);
+        }
+      }
     }
 
     private static void HatodikFeladat()
