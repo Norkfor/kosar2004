@@ -29,7 +29,14 @@ namespace kosar2004
 
     private static void HatodikFeladat()
     {
-
+      Console.WriteLine("6. feladat");
+      foreach (var k in kosar)
+      {
+        if (k.Idopont == DateTime.Parse("2004.11.21"))
+        {
+          Console.WriteLine("\t{0} - {1} ({2}:{3})", k.Hazai, k.Idegen, k.Hazai_pont, k.Idegen_pont);
+        }
+      }
     }
 
     private static void OtodikFeladat()
