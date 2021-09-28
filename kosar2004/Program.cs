@@ -10,6 +10,7 @@ namespace kosar2004
   {
     static void Main(string[] args)
     {
+
     }
   }
 }
