@@ -34,7 +34,15 @@ namespace kosar2004
 
     private static void OtodikFeladat()
     {
-
+      string neve = String.Empty;
+      foreach (var k in kosar)
+      {
+        if (k.Hazai.Contains("Barcelona"))
+        {
+          neve = k.Hazai;
+        }
+      }
+      Console.WriteLine("5. feladat: barcelonai csapat neve: {0}", neve);
     }
 
     private static void NegyedikFeladat()
