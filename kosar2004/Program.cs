@@ -39,7 +39,22 @@ namespace kosar2004
 
     private static void NegyedikFeladat()
     {
-
+      bool volte = false;
+      foreach (var k in kosar)
+      {
+        if (k.Hazai_pont == k.Idegen_pont)
+        {
+          volte = true;
+        }
+      }
+      if (volte == true)
+      {
+        Console.WriteLine("4. feladat: Volt döntetlen? igen");
+      }
+      else
+      {
+        Console.WriteLine("4. feladat: Volt döntetlen? nem");
+      }
     }
 
     private static void HarmadikFeladat()
