@@ -44,7 +44,21 @@ namespace kosar2004
 
     private static void HarmadikFeladat()
     {
+      int hazai = 0;
+      int idegen = 0;
+      foreach (var k in kosar)
+      {
+        if (k.Hazai == "Real Madrid")
+        {
+          hazai++;
+        }
+        else if (k.Idegen == "Real Madrid")
+        {
+          idegen++;
+        }
 
+      }
+      Console.WriteLine("3. feladat: Real Madrid: Hazai: {0}, Idegen: {1}", hazai, idegen);
     }
 
     private static void MasodikFeladat()

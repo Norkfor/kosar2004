@@ -48,15 +48,15 @@ namespace kosar2004
       set { helyszin = value; }
     }
 
+
     private DateTime idopont;
-
-
 
     public DateTime Idopont
     {
       get { return idopont; }
       set { idopont = value; }
     }
+
     public kosarak(string hazai, string idegen, int hazai_pont, int idegen_ponnt, string helyszin, DateTime idopont)
     {
       this.hazai = hazai;
